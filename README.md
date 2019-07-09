@@ -22,9 +22,12 @@ Website for search with Autocomplete for Universty name.
  
  ## User Journey
  
- The user should be able to access the website .
- The user should be able to search for univesity name and see the autocomplet for the name while he typing .
+ As a user I should be able to access the website .
+ As a user I should be able to search for univesity name and see the autocomplet for the name while he typing .
  
+ ## skitch 
+ ![Screenshot from 2019-07-09 10-54-56](https://user-images.githubusercontent.com/47992412/60869842-65206180-a238-11e9-94c6-486895d6caa2.png)
+
  
  
  ## Team Member :
