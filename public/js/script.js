@@ -1,9 +1,7 @@
 const search = document.getElementById("search");
-const searchValue = search.value;
-console.log("search vakjdf", searchValue);
-search.addEventListener("keydown", univerName => {
-  univerName = searchValue;
-  fetch(`/search?q=${univerName}`)
+search.addEventListener("keyup", event => {
+  console.log(event.target.value);
+  fetch(`/search?q=${event.target.value}`)
     .then(response => {
       return response.json();
     })
