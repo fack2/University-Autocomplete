@@ -5,12 +5,18 @@ Website for search with Autocomplete for Universty name.
 ## File structer
 - Public 
   - index.html
-  - style.css
-  - javascript
+  - CSS
+    - style.css
+  - Js
+    - javascript
   - Images
     - image.jpg
  - src
- - test.js
+   - server.js
+   - handler.js
+   - router.js
+ - test
+  - test.js
  
  
  
