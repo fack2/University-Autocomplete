@@ -8,7 +8,7 @@ Website for search with Autocomplete for Universty name.
   - CSS
     - style.css
   - Js
-    - javascript
+    - script.js
   - Images
     - image.jpg
  - src
