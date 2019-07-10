@@ -6,23 +6,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Kalam&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section class="container">
-        <form>
-            <label for=""></label>
-            <!-- <input type="text" list="autocomplete" name="search" id="search" class="search" placeholder="Enter University Name... " /> -->
-            <input autocomplete="off" list="autocomplete" id="search" type="text" class="search" placeholder="Enter University Name... ">
-            <div autocomplete="off" id="list" class="list" id="autocomplete"></div>
-        </form>
-
+    <section id="form" class="form">
+        <label for="searchBox">.
+            <input id="search" type="search" class="search" placeholder="Enter University Name... ">
+        </label>
+        <div id="list" class="list"></div>
     </section>
-    <!-- <script
-      type="text/java
-      script"
-      src="/src/uniName.json"
-    ></script> -->
+    <p id="randomText"></p>
     <script type="text/javascript" src="/public/js/script.js"></script>
 </body>
 

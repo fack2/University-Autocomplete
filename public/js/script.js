@@ -24,12 +24,5 @@ search.addEventListener("keyup", event => {
 
             list.textContent = "";
             list.appendChild(ul);
-            // for (let i = 0; i < data.length; i++) {
-            //     console.log(data[i]);
-
-            //     let item = document.createElement("li");
-            //     item = data[i];
-            //     ul.appendChild(item);
-            // }
         });
 });
