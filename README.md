@@ -1,6 +1,6 @@
 # University-Autocomplete
 
-Website for search with Autocomplete for Universty name.
+Website for search with Autocomplete for University name.
 
 [Uni Autocomplete](https://university-autocomplete.herokuapp.com/)
 
