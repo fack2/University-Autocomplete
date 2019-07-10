@@ -61,9 +61,14 @@ const apiHandler = (request, response, endpoint) => {
         if (read) {
             const result = JSON.parse(read);
             console.log(typeof result);
-            findMatch(result, queryString);
+            const resultfinal = findMatch(result, queryString);
+            response.writeHead(200, {
+                "Comtent-Type": "applicaton/json"
+            });
+            response.end(JSON.stringify(resultfinal));
             console.log("the qs", queryString);
-            console.log("results re", findMatch(result, queryString));
+            //console.log("results re", findMatch(result, queryString));
+
         } else if (error) {
             console.log(error);
             response.writeHead(500, {
@@ -77,34 +82,20 @@ const findMatch = (arr, input) => {
     if (input) {
         const matched = arr.map(ele => {
             if (ele["University of Andorra"].substr(0, input.length).toUpperCase() === input.toUpperCase()) {
-
                 return ele["University of Andorra"];
             }
         });
         const filteredData = matched.filter(result => {
             return result !== undefined;
         });
-        return filteredData;
+        return filteredData.slice(0, 10); //show only 5 item on list
     }
 };
 
-// const filePath = path.join(__dirname, "uniName.json");
-// const read = fs.readFile(filePath, "utf-8");
-// const result = JSON.parse(read).filter(ele => {
-//   queryString === ele["University of Andorra"];
-// });
-// console.log(result);
-
-// var data = fs.readFileSync("uniName.json", "utf8");
-// var words = JSON.parse(data);
-// console.log(words);
-
-// fetch("uniName.json")
-//   .then(response => response.json())
-//   .then(json => console.log(json));
 
 module.exports = {
     homeHandler,
     publicHandler,
     apiHandler
 };
+0

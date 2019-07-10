@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>University Guide</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <section class="container">
-      <form>
-        <label for=""></label>
-        <input
-          type="text"
-          name="search"
-          id="search"
-          class="search"
-          placeholder="Enter University Name... "
-        />
-      </form>
+        <form>
+            <label for=""></label>
+            <!-- <input type="text" list="autocomplete" name="search" id="search" class="search" placeholder="Enter University Name... " /> -->
+            <input autocomplete="off" list="autocomplete" id="search" type="text" class="search" placeholder="Enter University Name... ">
+            <div autocomplete="off" id="list" class="list" id="autocomplete"></div>
+        </form>
+
     </section>
     <!-- <script
       type="text/java
@@ -26,5 +24,6 @@
       src="/src/uniName.json"
     ></script> -->
     <script type="text/javascript" src="/public/js/script.js"></script>
-  </body>
+</body>
+
 </html>
