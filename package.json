@@ -1,26 +1,27 @@
 {
-  "name": "University-Autocomplete",
-  "version": "1.0.0",
-  "description": "Website for search with Autocomplete for Universty name.",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "start": "nodemon src/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fack2/University-Autocomplete.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fack2/University-Autocomplete/issues"
-  },
-  "homepage": "https://github.com/fack2/University-Autocomplete#readme",
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  }
+    "name": "University-Autocomplete",
+    "version": "1.0.0",
+    "description": "Website for search with Autocomplete for Universty name.",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fack2/University-Autocomplete.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fack2/University-Autocomplete/issues"
+    },
+    "homepage": "https://github.com/fack2/University-Autocomplete#readme",
+    "devDependencies": {
+        "nodemon": "^1.19.1"
+    }
 }
