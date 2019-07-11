@@ -1,49 +1,62 @@
-
 body {
-    background-image: url("https://i.pinimg.com/564x/40/77/23/4077236e2cb18b32937fe39cc7973ecb.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover cover;
-    margin-bottom: 0;
+  background-image: url("https://i.pinimg.com/564x/40/77/23/4077236e2cb18b32937fe39cc7973ecb.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover cover;
+  margin-bottom: 0;
 }
 
 input[type="search"] {
-    width: 180px;
-    box-sizing: border-box;
-    border: 2px solid #65a7a4;
-    border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
-    background-color: white;
-    background-image: url("/public/image/search.png");
-    background-size: 20px;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.02s ease-in-out;
-    margin-left: 25%;
+  width: 180px;
+  box-sizing: border-box;
+  border: 2px solid #65a7a4;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  background-color: white;
+  background-image: url("/public/image/search.png");
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.02s ease-in-out;
+  margin-left: 25%;
+  display: inline;
 }
 
 section {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 input[type="search"]:focus {
-    border: 4px solid #65a7a4;
-    width: 85%;
-    margin: 0 auto;
-    position: relative;
-    margin-left: 8%;
+  border: 4px solid #65a7a4;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 8%;
 }
 
 .item {
-    text-align: center;
-    width: 83%;
-    border: 1px solid #65a7a4;
-    margin-left: 20px;
-    color: black;
-    font-size: 18px;
-    background-color: white;
-    font-family: 'Fira Sans Extra Condensed', sans-serif;
+  text-align: center;
+  width: 83%;
+  border: 1px solid #65a7a4;
+  margin-left: 20px;
+  color: black;
+  font-size: 18px;
+  background-color: white;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.button {
+  background-color: azure;
+  border: 1px gery;
+  border-radius: 5px;
+  display: inline;
+  font-size: 1.15em;
+  margin-left: 5px;
+  width: 20%;
+}
+.links {
+  background-color: gray;
 }
