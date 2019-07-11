@@ -1,6 +1,7 @@
 # University-Autocomplete
 
-Website for search with Autocomplete for Universty name.
+Website for search with Autocomplete for University name.
+
 [Uni Autocomplete](https://university-autocomplete.herokuapp.com/)
 
 ## File structer
@@ -24,7 +25,6 @@ Website for search with Autocomplete for Universty name.
  
  ## User Journey
  
- As a user I should be able to access the website .
  As a user I should be able to search for univesity name and see the autocomplet for the name while he typing .
  
  ## skitch 

@@ -3,20 +3,25 @@
   <head>
     <title>University Guide</title>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Kalam&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Kalam&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <section class="container">
-      <form>
-        <label for=""></label>
-        <!-- <input type="text" list="autocomplete" name="search" id="search" class="search" placeholder="Enter University Name... " /> -->
+    <section id="form" class="form">
+      <label for="searchBox"
+        >.
         <input
-          autocomplete="off"
-          list="autocomplete"
           id="search"
-          type="text"
+          type="search"
           class="search"
           placeholder="Enter University Name... "
         />
@@ -28,15 +33,11 @@
           value="Search"
           ;
         />
-        <div autocomplete="off" id="list" class="list" id="autocomplete"></div>
-      </form>
-      <div id="universitiesLink" class="universitiesLink"></div>
+      </label>
+      <div id="list" class="list"></div>
+      <div id="universitiesLink"></div>
     </section>
-    <!-- <script
-      type="text/java
-      script"
-      src="/src/uniName.json"
-    ></script> -->
+    <p id="randomText"></p>
     <script type="text/javascript" src="/public/js/script.js"></script>
   </body>
 </html>
