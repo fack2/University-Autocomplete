@@ -1,6 +1,5 @@
 const search = document.getElementById("search");
 search.addEventListener("keyup", event => {
-  console.log(event.target.value);
   fetch(`/search?q=${event.target.value}`)
     .then(response => {
       return response.json();
@@ -16,8 +15,13 @@ search.addEventListener("keyup", event => {
         const valueOfArr = document.createTextNode(data[i]);
         li.appendChild(valueOfArr);
         ul.appendChild(li);
+        li.addEventListener("click", event => {
+          search.value = li.innerText;
+        });
       }
-
+      if (search.value == "") {
+        ul.innerText = "";
+      }
       list.textContent = "";
       list.appendChild(ul);
     });
