@@ -17,8 +17,7 @@ Website for search with Autocomplete for University name.
    - server.js
    - handler.js
    - router.js
-   
-   -Data
+   - Data
     - uniName.json
  - test
    - test.js
