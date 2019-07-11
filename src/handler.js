@@ -1,10 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-// let dataFile = require("./uniName.json");
-// var d = dataFile.data[0];
-// d2 = d.DA;
-// console.log(d);
-
 const homeHandler = (request, response) => {
   const filePath = path.join(__dirname, "..", "public", "index.html");
   fs.readFile(filePath, (error, file) => {
@@ -16,7 +11,7 @@ const homeHandler = (request, response) => {
       response.end("<h1>Server Error</h1>");
     } else {
       response.writeHead(200, {
-        "Contetn-Type": "text/html"
+        "Content-Type": "text/html"
       });
       response.end(file);
     }
@@ -34,7 +29,6 @@ const publicHandler = (request, response, endpoint) => {
   };
 
   const filePath = path.join(__dirname, "..", endpoint);
-  // console.log("endpoint,", endpoint);
   fs.readFile(filePath, (error, file) => {
     if (error) {
       console.log(error);
@@ -44,7 +38,7 @@ const publicHandler = (request, response, endpoint) => {
       response.end("<h1>Server Error</h1>");
     } else {
       response.writeHead(200, {
-        "Contetn-Type": extensionType[extension]
+        "Content-Type": extensionType[extension]
       });
       response.end(file);
     }
@@ -52,22 +46,17 @@ const publicHandler = (request, response, endpoint) => {
 };
 
 const apiHandler = (request, response, endpoint) => {
-  console.log("request uni", request.url);
-  var queryString = endpoint.split("=")[1];
-  console.log(queryString);
+  const queryString = endpoint.split("=")[1];
 
-  const filePath = path.join(__dirname, "uniName.json");
+  const filePath = path.join(__dirname, "/data/uniName.json");
   fs.readFile(filePath, "utf-8", (error, read) => {
     if (read) {
       const result = JSON.parse(read);
-      console.log(typeof result);
       const resultfinal = findMatch(result, queryString);
       response.writeHead(200, {
-        "Comtent-Type": "applicaton/json"
+        "Content-Type": "applicaton/json"
       });
       response.end(JSON.stringify(resultfinal));
-      console.log("the qs", queryString);
-      //console.log("results re", findMatch(result, queryString));
     } else if (error) {
       console.log(error);
       response.writeHead(500, {
@@ -90,7 +79,7 @@ const findMatch = (arr, input) => {
     const filteredData = matched.filter(result => {
       return result !== undefined;
     });
-    return filteredData.slice(0, 10); //show only 5 item on list
+    return filteredData.slice(0, 10);
   }
 };
 
