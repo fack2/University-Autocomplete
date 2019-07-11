@@ -1,62 +1,76 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("/public/image/uni1.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover cover;
-    margin-bottom: 0;
+  background-image: url("/public/image/uni1.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover cover;
+  margin-bottom: 0;
 }
 
 input[type="text"] {
-    width: 180px;
-    box-sizing: border-box;
-    border: 4px solid #65a7a4;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url("/public/image/search.png");
-    background-size: 20px;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.02s ease-in-out;
-    margin-left: 25%;
+  width: 180px;
+  box-sizing: border-box;
+  border: 4px solid #65a7a4;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("/public/image/search.png");
+  background-size: 20px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.02s ease-in-out;
+  margin-left: 25%;
+  display: inline;
 }
 
 form {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 input[type="text"]:focus {
-    border: 4px solid #65a7a4;
-    width: 85%;
-    margin: 0 auto;
-    position: relative;
-    margin-left: 8%;
+  border: 4px solid #65a7a4;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  margin-left: 8%;
 }
 
 .search {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    border: 1px solid red;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid red;
 }
 
 .list {
-    border: 1px solid transparent;
-    padding-top: 10px;
+  border: 1px solid transparent;
+  padding-top: 10px;
 }
 
 #autocomplete {
-    border: 1px solid transparent;
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-size: 20px;
-    margin-left: 35%;
-    width: 38%;
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 35%;
+  width: 38%;
+}
+
+.links {
+  background-color: gray;
+}
+
+.button {
+  background-color: azure;
+  border: 1px gery;
+  border-radius: 5px;
+  display: inline;
+  font-size: 1.15em;
+  margin-left: 5px;
 }
