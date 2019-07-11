@@ -11,13 +11,14 @@ Website for search with Autocomplete for University name.
     - style.css
   - Js
     - script.js
-  - Images
+  - assest
     - image.jpg
  - src
    - server.js
    - handler.js
    - router.js
-   - uniName.json
+   -Data
+    - uniName.json
  - test
    - test.js
  
